@@ -2,8 +2,10 @@ import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import NavBar from "./Components/NavBar/NavBar";
-import Home from "./Components/Home/Home";
-
+import Home from "./Pages/Home/Home";
+import Events from "./Pages/Events";
+import "bootstrap/dist/css/bootstrap.min.css";
+import TransitionPage from "./Components/TransitionPage/TransitionPage";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,8 +15,9 @@ function App() {
       <NavBar></NavBar>
 
       <Routes>
-        <Route path="/test" element={<div>TEST</div>} />
+        <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/events" element={<Events />} />
         <Route></Route>
       </Routes>
     </>

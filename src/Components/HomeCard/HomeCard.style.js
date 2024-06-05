@@ -8,7 +8,7 @@ export const CardContainer = styled.div`
   width: 100%;
   height: auto;
   position: relative;
-  margin: 10px;
+  margin-top: 150px;
 `;
 
 export const Card = styled.div`
@@ -25,4 +25,9 @@ export const CardTitle = styled.h1`
   color: ${WHITE_NEUTRAL};
   font-size: 40px;
   text-align: center;
+`;
+
+export const CardImg = styled.img`
+  width: 700px;
+  height: 500px;
 `;

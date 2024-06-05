@@ -5,49 +5,74 @@ import {
   GRAY,
   GREEN_DARK,
   RED_DARK,
+  WHITE_GRAY,
 } from "../../Constants/color";
 
 export const Logo = styled.img`
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  padding: 0px 10px;
 `;
 export const NavBarContainer = styled.div`
-  margin: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  background: ${RED_DARK};
-  height: 50px;
+  /* justify-content: space-around; */
+  height: 60px;
   padding: 10px;
-  position: relative;
-  border-radius: 20px;
+
+  position: fixed;
+  /* border-radius: 10px; */
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  font-weight: bold;
 `;
-export const InputNavBar = styled.input`
-  width: 70%;
-  height: 40px;
-  border-radius: 20px;
-  background-color: white;
-  border: solid white;
-`;
+
+//  &:hover {
+//   background-color: WHITE_GRAY;
+//  }
+// export const InputNavBar = styled.input`
+//   width: 50%;
+//   height: 30px;
+//   border-radius: 10px;
+//   border-color: ${WHITE_GRAY};
+//   border-top-color: ${WHITE_GRAY};
+//   border-left-color: ${WHITE_GRAY};
+
+//   background-color: #fff;
+//   padding-top: 10px;
+// `;
 
 export const LinkNavStyle = styled(Link)`
   text-decoration: none;
-  text-align: center;
-  cursor: pointer;
-  color: #fff;
-  padding: 10px 12px;
+  justify-content: right;
+  color: ${GRAY};
+  padding: 0px 5px;
   border-radius: 4px;
 
   &:hover {
-    background-color: transparent;
-    width: 60px;
-    height: 25px;
+    color: ${WHITE_GRAY};
   }
 
   @media screen and (max-width: 820px) {
-    color: ${GRAY};
+    color: ${WHITE_NEUTRAL};
+  }
+`;
+
+export const LinkNavDropdownStyle = styled(Link)`
+  text-decoration: none;
+  justify-content: right;
+  color: ${GRAY};
+  padding: 0px 5px;
+  border-radius: 4px;
+
+  &:hover {
+    color: ${WHITE_GRAY};
+  }
+
+  @media screen and (max-width: 820px) {
+    color: ${WHITE_NEUTRAL};
   }
 `;
 
@@ -83,9 +108,11 @@ export const LinkContainer = styled.div`
 export const LinkContainerDesktop = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  padding-left: 1050px;
+  gap: 20px;
   width: 50%;
   height: 60px;
+  /* padding-left: 420px; */
 
   @media screen and (max-width: 820px) {
     display: none;
@@ -109,4 +136,9 @@ export const ButtonDropdown = styled.button`
   @media screen and (max-width: 820px) {
     display: block;
   }
+`;
+
+export const DropdownButton = styled.button`
+  color: black;
+  background-color: white;
 `;

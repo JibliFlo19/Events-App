@@ -1,0 +1,38 @@
+{
+  "events": [
+    {
+      "category": "party",
+      "city": "Iasi",
+
+      
+      "name": "Summer Bash",
+      "img" :"url",
+      "date": "2024/07/15",
+      "location": "Club XYZ",
+      "description": "A vibrant summer party with DJ performances and live music.",
+      "price": "120"
+    },
+    {
+      "category": "party",
+      "city": "Bucuresti",
+
+      "name": "Night Fever",
+      "img" :"url",
+      "date": "2024/06/20",
+      "location": "Downtown Club",
+      "description": "The hottest night party in town with top DJs.",
+      "price": "120"
+    },
+    {
+      "category": "concerts",
+      "city": "Sibiu",
+
+      "name": "Rock Legends",
+      "img" :"url",
+      "date": "2024/08/10",
+      "location": "Open Air Theater",
+      "description": "An electrifying rock concert with legendary bands.",
+      "price": "120"
+    }
+  ]
+}

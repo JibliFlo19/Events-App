@@ -1,10 +1,20 @@
 import styled from "styled-components";
 import { GRAY, WHITE_NEUTRAL } from "../../Constants/color";
 
+export const HomeWrapper = styled.div`
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  background-image: url("https://images.pexels.com/photos/1684187/pexels-photo-1684187.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-position-y: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+`;
+
 export const HomeContainer = styled.div`
   display: flex;
   flex-direction: row;
-  margin: 20px;
+  padding: 20px;
 `;
 
 export const HomeImgBackground = styled.img`
@@ -21,7 +31,7 @@ export const HomeTitle = styled.h1`
   font-size: 90px;
   position: absolute;
   margin: 0;
-  top: calc(50% - 45px);
+  top: calc(50% - 80px);
   left: 0;
   display: flex;
   justify-content: center;
@@ -34,7 +44,7 @@ export const HomeSlogan = styled.p`
   font-size: 30px;
   position: absolute;
   margin: 0;
-  top: calc(50% + 60px);
+  top: calc(50% + 10px);
   left: 0;
   display: flex;
   justify-content: center;
