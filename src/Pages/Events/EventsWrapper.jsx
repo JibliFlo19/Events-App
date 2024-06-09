@@ -16,7 +16,7 @@ function EventsWrapper({
   name,
   date,
   location,
-  description,
+
   price,
 }) {
   return (
@@ -31,9 +31,7 @@ function EventsWrapper({
         <Text>
           <UperText>Category: </UperText> {category}
         </Text>
-        <Text>
-          <UperText>Description: </UperText> {description}
-        </Text>
+
         <Text>
           <UperText>City: </UperText>
           {city}

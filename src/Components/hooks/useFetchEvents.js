@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const API_URL = "http://localhost:3003/events";
+const API_URL = "http://localhost:3002/events";
 
 const useFetchEvents = () => {
   const [events, setEvents] = useState(null);

@@ -7,3 +7,4 @@ export const ORANGE = "#FF7535";
 export const WHITE_GRAY = "#BDBEBE";
 export const SKY_BLUE = "#D0DCF4";
 export const INTENSE_BLUE = "#4A90E4";
+export const BEIGE = "#D1CBBF";

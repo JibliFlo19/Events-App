@@ -1,14 +1,20 @@
 import { Link } from "react-router-dom";
 
 import styled from "styled-components";
-import { GREEN_DARK, WHITE_NEUTRAL } from "../../Constants/color";
+import {
+  GREEN_DARK,
+  WHITE_NEUTRAL,
+  BEIGE,
+  SKY_BLUE,
+} from "../../Constants/color";
 
 export const Card = styled(Link)`
-  background: ${GREEN_DARK};
-  color: ${WHITE_NEUTRAL};
-  width: 340px;
+  background: ${SKY_BLUE};
+  color: black;
+  text-decoration: none;
+  width: 300px;
   height: auto;
-  padding: 16px;
+  padding: 12px;
   display: flex;
   flex-direction: column;
   max-height: 600px;
@@ -16,16 +22,16 @@ export const Card = styled(Link)`
 `;
 
 export const CardImgContainer = styled.div`
-  height: 300px;
+  height: 550px;
   display: flex;
   justify-content: center;
 `;
 
 export const CardImg = styled.img`
   padding: 0;
-  width: 100%;
-  max-height: 300px;
-  height: 100%;
+  width: 250px;
+  max-height: 350px;
+  height: 500px;
   border-radius: 4px;
 `;
 
@@ -39,8 +45,9 @@ export const CardInfoContainer = styled.div`
 `;
 
 export const Title = styled.h1`
-  margin: 16px 0;
-  color: ${(props) => (props.isWhite ? WHITE_NEUTRAL : WHITE_NEUTRAL)};
+  margin: 10px 0;
+  color: ${WHITE_NEUTRAL};
+  font-size: 20px;
 `;
 
 export const Text = styled.p`
@@ -49,5 +56,6 @@ export const Text = styled.p`
 
 export const UperText = styled.span`
   text-transform: uppercase;
-  text-decoration: solid;
+  text-decoration: none;
+  color: ${WHITE_NEUTRAL};
 `;

@@ -1,6 +1,9 @@
 import styled from "styled-components";
+import { SKY_BLUE } from "./../../Constants/color";
 
-export const EventWrapper = styled.div``;
+export const EventWrapper = styled.div`
+  background-color: ${SKY_BLUE};
+`;
 
 export const EventWrapContainer = styled.div`
   display: flex;
