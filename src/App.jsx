@@ -6,6 +6,7 @@ import Home from "./Pages/Home/Home";
 import Events from "./Pages/Events";
 import "bootstrap/dist/css/bootstrap.min.css";
 import TransitionPage from "./Components/TransitionPage/TransitionPage";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -18,8 +19,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/events" element={<Events />} />
+
         <Route></Route>
       </Routes>
+      <Footer />
     </>
   );
 }

@@ -7,7 +7,7 @@
       
       "name": "Gelato Festival",
       "img" :"https://images.pexels.com/photos/8713075/pexels-photo-8713075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "date": "2024/06/20",
+      "date": "2024/07/20",
       "location" : "Club XYZ",
      
       "price": "50"
@@ -18,7 +18,7 @@
 
       "name": "Night Fever",
       "img" :"https://images.pexels.com/photos/1164985/pexels-photo-1164985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "date": "2024/06/20",
+      "date": "2024/08/24",
       "location": "Downtown Club",
       
       "price": "200"
@@ -44,7 +44,7 @@
       "date": "2024/07/15",
       "location": "Club XYZ",
       
-      "price": "120"
+      "price": "50"
     },
     {
       "category": "Theatre",
@@ -53,10 +53,10 @@
       
       "name": "The Unexpected Guest",
       "img" :"https://images.pexels.com/photos/6899932/pexels-photo-6899932.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "date": "2024/07/15",
+      "date": "2024/07/28",
       "location": "Club XYZ",
      
-      "price": "120"
+      "price": "200"
     },
     {
       "category": "Sport",
@@ -76,8 +76,8 @@
       "city": "Iasi",
 
       
-      "name": "Another food festival",
-      "img" :"https://images.pexels.com/photos/8713075/pexels-photo-8713075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "name": "Sushi festival",
+      "img" :"https://images.pexels.com/photos/1148087/pexels-photo-1148087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "date": "2024/06/20",
       "location" : "Club XYZ",
      
@@ -87,8 +87,8 @@
       "category": "Party",
       "city": "Bucuresti",
 
-      "name": "Oldies party",
-      "img" :"https://images.pexels.com/photos/1164985/pexels-photo-1164985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "name": "Oldies hits party",
+      "img" :"https://images.pexels.com/photos/1762578/pexels-photo-1762578.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "date": "2024/06/20",
       "location": "Downtown Club",
       
@@ -99,7 +99,7 @@
       "city": "Sibiu",
 
       "name": "Rockstars tribute",
-      "img" :"https://images.pexels.com/photos/2927080/pexels-photo-2927080.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "img" :"https://images.pexels.com/photos/2928026/pexels-photo-2928026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "date": "2024/08/10",
       "location": "Open Air Theater",
       
@@ -110,8 +110,8 @@
       "city": "Iasi",
 
       
-      "name": "Street food festival",
-      "img" :"https://images.pexels.com/photos/302890/pexels-photo-302890.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "name": "Sweet tooth",
+      "img" :"https://images.pexels.com/photos/913136/pexels-photo-913136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "date": "2024/07/15",
       "location": "Club XYZ",
       
@@ -135,8 +135,8 @@
 
       
       
-      "name": "Basketball competition",
-      "img" :"https://images.pexels.com/photos/1152854/pexels-photo-1152854.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "name": "Let's cycle together",
+      "img" :"https://images.pexels.com/photos/20500972/pexels-photo-20500972/free-photo-of-femeie-strada-drum-osea.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "date": "2024/07/15",
       "location": "Club XYZ",
       
@@ -159,7 +159,7 @@
       "city": "Bucuresti",
 
       "name": "Summer Breeze",
-      "img" :"https://images.pexels.com/photos/1164985/pexels-photo-1164985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "img" :"https://images.pexels.com/photos/136040/pexels-photo-136040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "date": "2024/06/20",
       "location": "Downtown Club",
       
@@ -215,7 +215,7 @@
     },
     {
       "category": "Street Food",
-      "city": "Iasi",
+      "city": "Sibiu",
 
       
       "name": "Tea and sweets",
