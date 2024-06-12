@@ -1,0 +1,244 @@
+{
+  "events": [
+    {
+      "id": "0",
+      "category": "Street Food",
+      "city": "Iasi",
+      "description":"Cel mai ateptat eveniment al veri",
+      "name": "Gelato Festival",
+      "img": "https://images.pexels.com/photos/8713075/pexels-photo-8713075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "date": "2024/07/20",
+      "location": "Club XYZ",
+
+      "price": "50"
+    },
+    {
+      "id": "1",
+      "category": "Party",
+      "city": "Bucuresti",
+
+      "name": "Night Fever",
+      "img": "https://images.pexels.com/photos/1164985/pexels-photo-1164985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "date": "2024/08/24",
+      "location": "Downtown Club",
+
+      "price": "200"
+    },
+    {
+      "id": "2",
+      "category": "Concerts",
+      "city": "Sibiu",
+
+      "name": "Piano meets Jazz",
+      "img": "https://images.pexels.com/photos/2927080/pexels-photo-2927080.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "date": "2024/08/10",
+      "location": "Open Air Theater",
+
+      "price": "120"
+    },
+    {
+      "id": "3",
+      "category": "Street Food",
+      "city": "Iasi",
+
+      "name": "Coffee o'clock",
+      "img": "https://images.pexels.com/photos/302890/pexels-photo-302890.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "date": "2024/07/15",
+      "location": "Club XYZ",
+
+      "price": "50"
+    },
+    {
+      "id": "4",
+      "category": "Theatre",
+      "city": "Iasi",
+
+      "name": "The Unexpected Guest",
+      "img": "https://images.pexels.com/photos/6899932/pexels-photo-6899932.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "date": "2024/07/28",
+      "location": "Club XYZ",
+
+      "price": "200"
+    },
+    {
+      "id": "5",
+      "category": "Sport",
+      "city": "Bucuresti",
+
+      "name": "On sk8",
+      "img": "https://images.pexels.com/photos/1152854/pexels-photo-1152854.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "date": "2024/07/15",
+      "location": "Club XYZ",
+
+      "price": "120"
+    },
+    {
+      "id": "6",
+      "category": "Street Food",
+      "city": "Iasi",
+
+      "name": "Sushi festival",
+      "img": "https://images.pexels.com/photos/1148087/pexels-photo-1148087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "date": "2024/06/20",
+      "location": "Club XYZ",
+
+      "price": "120"
+    },
+    {
+      "id": "7",
+      "category": "Party",
+      "city": "Bucuresti",
+
+      "name": "Oldies hits party",
+      "img": "https://images.pexels.com/photos/1762578/pexels-photo-1762578.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "date": "2024/06/20",
+      "location": "Downtown Club",
+
+      "price": "200"
+    },
+    {
+      "id": "8",
+      "category": "Concerts",
+      "city": "Sibiu",
+
+      "name": "Rockstars tribute",
+      "img": "https://images.pexels.com/photos/2928026/pexels-photo-2928026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "date": "2024/08/10",
+      "location": "Open Air Theater",
+
+      "price": "120"
+    },
+    {
+      "id": "9",
+      "category": "Street Food",
+      "city": "Iasi",
+
+      "name": "Sweet tooth",
+      "img": "https://images.pexels.com/photos/913136/pexels-photo-913136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "date": "2024/07/15",
+      "location": "Club XYZ",
+
+      "price": "120"
+    },
+    {
+      "id": "10",
+      "category": "Theatre",
+      "city": "Iasi",
+
+      "name": "The Unknown",
+      "img": "https://images.pexels.com/photos/6899932/pexels-photo-6899932.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "date": "2024/07/15",
+      "location": "Club XYZ",
+
+      "price": "120"
+    },
+    {
+      "id": "11",
+      "category": "Sport",
+      "city": "Bucuresti",
+
+      "name": "Let's cycle together",
+      "img": "https://images.pexels.com/photos/20500972/pexels-photo-20500972/free-photo-of-femeie-strada-drum-osea.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "date": "2024/07/15",
+      "location": "Club XYZ",
+
+      "price": "120"
+    },
+    {
+      "id": "12",
+      "category": "Street Food",
+      "city": "Iasi",
+
+      "name": "Asian food festival",
+      "img": "https://images.pexels.com/photos/3297882/pexels-photo-3297882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "date": "2024/06/20",
+      "location": "Club XYZ",
+
+      "price": "120"
+    },
+    {
+      "id": "13",
+      "category": "Party",
+      "city": "Bucuresti",
+
+      "name": "Summer Breeze",
+      "img": "https://images.pexels.com/photos/136040/pexels-photo-136040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "date": "2024/06/20",
+      "location": "Downtown Club",
+
+      "price": "200"
+    },
+    {
+      "id": "14",
+      "category": "Concerts",
+      "city": "Sibiu",
+
+      "name": "Special concert",
+      "img": "https://images.pexels.com/photos/2927080/pexels-photo-2927080.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "date": "2024/08/10",
+      "location": "Open Air Theater",
+
+      "price": "120"
+    },
+    {
+      "id": "15",
+      "category": "Street Food",
+      "city": "Iasi",
+
+      "name": "Burgers and fries",
+      "img": "https://images.pexels.com/photos/1108117/pexels-photo-1108117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "date": "2024/07/15",
+      "location": "Club XYZ",
+
+      "price": "120"
+    },
+    {
+      "id": "16",
+      "category": "Theatre",
+      "city": "Iasi",
+
+      "name": "Faust",
+      "img": "https://images.pexels.com/photos/6899932/pexels-photo-6899932.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "date": "2024/07/15",
+      "location": "Club XYZ",
+
+      "price": "120"
+    },
+    {
+      "id": "17",
+      "category": "Sport",
+      "city": "Bucuresti",
+
+      "name": "Color Run",
+      "img": "https://images.pexels.com/photos/1152854/pexels-photo-1152854.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "date": "2024/07/15",
+      "location": "Club XYZ",
+
+      "price": "120"
+    },
+    {
+      "id": "18",
+      "category": "Street Food",
+      "city": "Sibiu",
+
+      "name": "Tea and sweets",
+      "img": "https://images.pexels.com/photos/302890/pexels-photo-302890.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "date": "2024/07/15",
+      "location": "Club XYZ",
+
+      "price": "120"
+    },
+    {
+      "id": "19",
+      "category": "Theatre",
+      "city": "Iasi",
+
+      "name": "Hamlet",
+      "img": "https://images.pexels.com/photos/6899932/pexels-photo-6899932.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "date": "2024/07/15",
+      "location": "Club XYZ",
+
+      "price": "120"
+    }
+  ]
+}
