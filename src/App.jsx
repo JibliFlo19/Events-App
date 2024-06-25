@@ -11,6 +11,7 @@ import EventDetailPage from "./Components/EventDetailPage/EventDetailPage";
 import Login from "./Pages/Login/Login";
 import Contacts from "./Pages/Contacts/Contacts"
 import Profile from "./Components/Profile/Profile";
+import SignUp from "./Pages/SignUp/SignUp";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path="/login" element={<Login/>}/>
         <Route path="/contacts" element={<Contacts/>}/>
         <Route path="/profile" element={<Profile/>}/>
+        <Route path="/signUp" element={<SignUp/>}/>
     
 
       </Routes>

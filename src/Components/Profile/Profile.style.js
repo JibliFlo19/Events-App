@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-
-export const ProfileContainer =styled.div`
-background-color: red;
-`
+export const UserProfileContainer = styled.div`
+    display: flex;
+   
+`;

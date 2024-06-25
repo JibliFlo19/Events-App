@@ -6,6 +6,7 @@ import {
     LoginContainerInput,
     LoginContainerLabel,
     LoginContainerForm,
+    SignUpContainerButton,
 } from "../Login/Login.style";
 import { useNavigate  } from "react-router-dom";
 
@@ -14,7 +15,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
   const navigate=useNavigate();
-  
+
 
   const handleSubmit = (e) => {
     fetch(`http://localhost:3001/users?email=${email}&password=${password}`, {
@@ -37,7 +38,9 @@ const Login = () => {
         setMessage("An error occurred");
       });
   };
-
+  const handleSignUp = () => {
+    navigate('/signup');
+  };
   console.log("Email:", email);
   console.log("Password:", password);
 
@@ -64,10 +67,10 @@ const Login = () => {
       <LoginContainerButton onClick={handleSubmit}>Login</LoginContainerButton>
       {message && <p>{message}</p>}
       <LoginContainerLabel>Don't you have an acount?</LoginContainerLabel>
-      <LoginContainerButton onClick={handleSubmit}>Sign up</LoginContainerButton>
+      <SignUpContainerButton onClick={handleSignUp}>Sign up</SignUpContainerButton>
     
     </LoginContainer>
   );
-};
+}
 
 export default Login;

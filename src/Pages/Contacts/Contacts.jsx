@@ -14,7 +14,6 @@ import {
   SocialMediaList,
   SocialMediaListItem,
   SocialMediaLink,
-
 } from "../Contacts/Contacts.style";
 
 const Contacts = () => {
@@ -24,6 +23,7 @@ const Contacts = () => {
     subject: "Achiziție bilete",
     message: "",
   });
+  const [message, setMessage] = useState("");
 
   const handleChange = (e) => {
     setFormData({
@@ -34,8 +34,21 @@ const Contacts = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     console.log(formData);
+    setMessage("Successful message sent");
+
+    // Reset the form
+    setFormData({
+      name: "",
+      email: "",
+      subject: "Achiziție bilete",
+      message: "",
+    });
+
+    // Optionally clear the success message after a few seconds
+    setTimeout(() => {
+      setMessage("");
+    }, 3000);
   };
 
   return (
@@ -64,7 +77,7 @@ const Contacts = () => {
             onChange={handleChange}
           />
         </FormLabel>
-        <label>
+        <FormLabel>
           Email:
           <FormInput
             type="email"
@@ -72,8 +85,8 @@ const Contacts = () => {
             value={formData.email}
             onChange={handleChange}
           />
-        </label>
-        <label>
+        </FormLabel>
+        <FormLabel>
           Subiect:
           <select
             name="subject"
@@ -84,16 +97,17 @@ const Contacts = () => {
             <option value="Probleme tehnice">Probleme tehnice</option>
             <option value="Alte întrebări">Alte întrebări</option>
           </select>
-        </label>
-        <label>
+        </FormLabel>
+        <FormLabel>
           Mesaj:
           <FormTextArea
             name="message"
             value={formData.message}
             onChange={handleChange}
           />
-        </label>
+        </FormLabel>
         <FormButton type="submit">Trimite</FormButton>
+        {message && <p>{message}</p>}
       </ContactForm>
 
       <AditionalInfo>

@@ -1,29 +1,35 @@
 import { useState, useEffect } from "react";
 
-const useLocalStorage = (key = null) => {
+const useLocalStorage = (initialKey = null) => {
   const [localData, setLocalData] = useState(null);
   const [isLocalDataEmpty, setIsLocalDataEmpty] = useState(false);
+  const [key, setKey] = useState(initialKey);
 
   const resetLocalData = () => {
     localStorage.clear();
   };
 
-  const handleLocalData = (key, value) => {
-    if (key !== null && value) localStorage.setItem(key, value);
+  const handleLocalData = (newKey, value) => {
+    if (newKey !== null && value) {
+      localStorage.setItem(newKey, value);
+      if (newKey === key) {
+        setLocalData(value);
+      }
+    }
   };
 
-  const getData = () => {
-    if (key) {
-      const local = localStorage.getItem(key);
+  const getData = (localStorageKey) => {
+    if (localStorageKey) {
+      const local = localStorage.getItem(localStorageKey);
       local ? setLocalData(local) : setIsLocalDataEmpty(true);
     }
   };
 
   useEffect(() => {
-    getData();
-  }, []);
+    getData(key);
+  }, [key]);
 
-  return { localData, resetLocalData, handleLocalData, isLocalDataEmpty };
+  return { localData, resetLocalData, handleLocalData, isLocalDataEmpty, setKey };
 };
 
 export default useLocalStorage;

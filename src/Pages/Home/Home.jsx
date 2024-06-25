@@ -15,7 +15,7 @@ import TransitionPage from "../../Components/TransitionPage/TransitionPage";
 import { TransitionDiv } from "../../Components/TransitionPage/TransitionPage.style";
 // import ExampleCarouselImage from "components/ExampleCarouselImage";
 import Login from "../Login/Login";
-
+import SignUp from "../SignUp/SignUp";
 
 
 
