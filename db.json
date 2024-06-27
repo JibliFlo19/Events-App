@@ -7,7 +7,7 @@
       "description": "Cel mai ateptat eveniment al veri",
       "name": "Gelato Festival",
       "img": "https://images.pexels.com/photos/8713075/pexels-photo-8713075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "date": "2024/07/20",
+      "date": "06/07/2024",
       "location": "Club XYZ",
 
       "price": "50"
@@ -19,7 +19,7 @@
 
       "name": "Night Fever",
       "img": "https://images.pexels.com/photos/1164985/pexels-photo-1164985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "date": "2024/08/24",
+      "date": "07/07/2024",
       "location": "Downtown Club",
 
       "price": "200"
@@ -31,7 +31,7 @@
 
       "name": "Piano meets Jazz",
       "img": "https://images.pexels.com/photos/2927080/pexels-photo-2927080.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "date": "2024/08/10",
+      "date": "13/07/2024",
       "location": "Open Air Theater",
 
       "price": "120"
@@ -43,7 +43,7 @@
 
       "name": "Coffee o'clock",
       "img": "https://images.pexels.com/photos/302890/pexels-photo-302890.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "date": "2024/07/15",
+      "date": "13/07/2024",
       "location": "Club XYZ",
 
       "price": "50"
@@ -55,7 +55,7 @@
 
       "name": "The Unexpected Guest",
       "img": "https://images.pexels.com/photos/6899932/pexels-photo-6899932.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "date": "2024/07/28",
+      "date": "13/07/2024",
       "location": "Club XYZ",
 
       "price": "200"
@@ -67,7 +67,7 @@
 
       "name": "On sk8",
       "img": "https://images.pexels.com/photos/1152854/pexels-photo-1152854.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "date": "2024/07/15",
+      "date": "21/07/2024",
       "location": "Club XYZ",
 
       "price": "120"
@@ -79,7 +79,7 @@
 
       "name": "Sushi festival",
       "img": "https://images.pexels.com/photos/1148087/pexels-photo-1148087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "date": "2024/06/20",
+      "date": "21/07/2024",
       "location": "Club XYZ",
 
       "price": "120"
@@ -91,7 +91,7 @@
 
       "name": "Oldies hits party",
       "img": "https://images.pexels.com/photos/1762578/pexels-photo-1762578.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "date": "2024/06/20",
+      "date": "28/07/2024",
       "location": "Downtown Club",
 
       "price": "200"
@@ -103,7 +103,7 @@
 
       "name": "Rockstars tribute",
       "img": "https://images.pexels.com/photos/2928026/pexels-photo-2928026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "date": "2024/08/10",
+      "date": "03/08/2024",
       "location": "Open Air Theater",
 
       "price": "120"
@@ -115,7 +115,7 @@
 
       "name": "Sweet tooth",
       "img": "https://images.pexels.com/photos/913136/pexels-photo-913136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "date": "2024/07/15",
+      "date": "04/08/2024",
       "location": "Club XYZ",
 
       "price": "120"
@@ -126,8 +126,8 @@
       "city": "Iasi",
 
       "name": "The Unknown",
-      "img": "https://images.pexels.com/photos/6899932/pexels-photo-6899932.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "date": "2024/07/15",
+      "img": "https://images.pexels.com/photos/6877445/pexels-photo-6877445.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "date": "10/08/2024",
       "location": "Club XYZ",
 
       "price": "120"
@@ -139,7 +139,7 @@
 
       "name": "Let's cycle together",
       "img": "https://images.pexels.com/photos/20500972/pexels-photo-20500972/free-photo-of-femeie-strada-drum-osea.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "date": "2024/07/15",
+      "date": "11/08/2024",
       "location": "Club XYZ",
 
       "price": "120"
@@ -151,7 +151,7 @@
 
       "name": "Asian food festival",
       "img": "https://images.pexels.com/photos/3297882/pexels-photo-3297882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "date": "2024/06/20",
+      "date": "17/08/2024",
       "location": "Club XYZ",
 
       "price": "120"
@@ -163,7 +163,7 @@
 
       "name": "Summer Breeze",
       "img": "https://images.pexels.com/photos/136040/pexels-photo-136040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "date": "2024/06/20",
+      "date": "18/08/2024",
       "location": "Downtown Club",
 
       "price": "200"
@@ -174,8 +174,8 @@
       "city": "Sibiu",
 
       "name": "Special concert",
-      "img": "https://images.pexels.com/photos/2927080/pexels-photo-2927080.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "date": "2024/08/10",
+      "img": "https://images.pexels.com/photos/7097466/pexels-photo-7097466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "date": "24/08/2024",
       "location": "Open Air Theater",
 
       "price": "120"
@@ -187,7 +187,7 @@
 
       "name": "Burgers and fries",
       "img": "https://images.pexels.com/photos/1108117/pexels-photo-1108117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "date": "2024/07/15",
+      "date": "25/08/2024",
       "location": "Club XYZ",
 
       "price": "120"
@@ -197,9 +197,9 @@
       "category": "Theatre",
       "city": "Iasi",
 
-      "name": "Faust",
-      "img": "https://images.pexels.com/photos/6899932/pexels-photo-6899932.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "date": "2024/07/15",
+      "name": "Story of two friends",
+      "img": "StoryTwoFriends.png",
+      "date": "31/08/2024",
       "location": "Club XYZ",
 
       "price": "120"
@@ -209,9 +209,9 @@
       "category": "Sport",
       "city": "Bucuresti",
 
-      "name": "Color Run",
-      "img": "https://images.pexels.com/photos/1152854/pexels-photo-1152854.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "date": "2024/07/15",
+      "name": "Running Competition",
+      "img": "https://images.pexels.com/photos/3764014/pexels-photo-3764014.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "date": "01/09/2024",
       "location": "Club XYZ",
 
       "price": "120"
@@ -222,8 +222,8 @@
       "city": "Sibiu",
 
       "name": "Tea and sweets",
-      "img": "https://images.pexels.com/photos/302890/pexels-photo-302890.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "date": "2024/07/15",
+      "img": "https://images.pexels.com/photos/19040148/pexels-photo-19040148/free-photo-of-flori-gradina-tabel-rustic.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "date": "07/09/2024",
       "location": "Club XYZ",
 
       "price": "120"
@@ -233,9 +233,9 @@
       "category": "Theatre",
       "city": "Iasi",
 
-      "name": "Hamlet",
-      "img": "https://images.pexels.com/photos/6899932/pexels-photo-6899932.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "date": "2024/07/15",
+      "name": "Enchanted Forest",
+      "img": "EnchantedForest.png",
+      "date": "08/09/2024",
       "location": "Club XYZ",
 
       "price": "120"

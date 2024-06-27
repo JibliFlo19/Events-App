@@ -1,25 +1,17 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import {
-  WHITE_NEUTRAL,
-  GRAY,
-  GREEN_DARK,
-  RED_DARK,
-  WHITE_GRAY,
-} from "../../Constants/color";
+import { WHITE_NEUTRAL, GRAY, WHITE_GRAY } from "../../Constants/color";
 
 export const Logo = styled.img`
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 `;
 export const NavBarContainer = styled.div`
   display: flex;
   flex-direction: row;
-  /* justify-content: space-around; */
   height: 60px;
   padding: 10px;
-
   position: fixed;
   /* border-radius: 10px; */
   left: 0;
@@ -46,7 +38,8 @@ export const NavBarContainer = styled.div`
 
 export const LinkNavStyle = styled(Link)`
   text-decoration: none;
-  justify-content: right;
+  justify-content: center;
+  /* text-align: center; */
   color: ${GRAY};
   padding: 0px 5px;
   border-radius: 4px;
@@ -62,7 +55,8 @@ export const LinkNavStyle = styled(Link)`
 
 export const LinkNavDropdownStyle = styled(Link)`
   text-decoration: none;
-  justify-content: right;
+  justify-content: center;
+  text-align: center;
   color: ${GRAY};
   padding: 0px 5px;
   border-radius: 4px;
@@ -80,18 +74,15 @@ export const DropdownContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: ${RED_DARK};
-  color: ${WHITE_NEUTRAL};
+
   width: 200px;
   height: 60px;
   position: absolute;
   top: 60px;
-  right: 0;
+  left: 50px;
 
-  @media screen and (max-width: 820px) {
-    display: block;
-    background-color: ${WHITE_NEUTRAL};
-  }
+  display: block;
+  background-color: ${WHITE_NEUTRAL};
 `;
 
 export const LinkContainer = styled.div`
@@ -108,11 +99,10 @@ export const LinkContainer = styled.div`
 export const LinkContainerDesktop = styled.div`
   display: flex;
   flex-direction: row;
-  padding-left: 1050px;
+  justify-content: center;
   gap: 20px;
-  width: 50%;
+  width: 100%;
   height: 60px;
-  /* padding-left: 420px; */
 
   @media screen and (max-width: 820px) {
     display: none;
@@ -129,16 +119,7 @@ export const ButtonDropdown = styled.button`
   margin: 0;
   border: none;
 
-  &:hover {
-    background-color: ${GREEN_DARK};
-  }
-
   @media screen and (max-width: 820px) {
     display: block;
   }
-`;
-
-export const DropdownButton = styled.button`
-  color: black;
-  background-color: white;
 `;

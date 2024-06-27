@@ -12,7 +12,7 @@ export const ContactPage = styled.div`
   border-radius: 10px;
   margin-top: 80px;
   margin-bottom: 80px;
-  background-color: #D0DCF4;
+  background-color: #d0dcf4;
   box-shadow: 0 4px 8px rgba;
 `;
 export const ContactInfo = styled.div`
@@ -45,12 +45,12 @@ export const ContactForm = styled.form`
 
 export const FormLabel = styled.label`
   display: block;
- margin-bottom: 10px;
+  margin-bottom: 10px;
   font-weight: bold;
 `;
 
 export const FormInput = styled.input`
-width: 100%;
+  width: 100%;
   padding: 10px;
   margin-top: 5px;
   margin-bottom: 20px;

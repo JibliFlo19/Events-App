@@ -17,8 +17,6 @@ import { TransitionDiv } from "../../Components/TransitionPage/TransitionPage.st
 import Login from "../Login/Login";
 import SignUp from "../SignUp/SignUp";
 
-
-
 export const category = [
   {
     title: "Party",
@@ -48,7 +46,7 @@ function Home() {
     <>
       <HomeWrapper>
         <HomeContainer>
-          <HomeTitle>Events</HomeTitle>
+          <HomeTitle>Events Fusion</HomeTitle>
           <HomeSlogan>There's no place like out of home</HomeSlogan>
         </HomeContainer>
       </HomeWrapper>

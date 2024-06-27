@@ -26,12 +26,14 @@ export const HomeImgBackground = styled.img`
 `;
 
 export const HomeTitle = styled.h1`
-  color: ${GRAY};
+  /* color: ${GRAY}; */
+  color: white;
   width: 100%;
   font-size: 90px;
+  font-family: "Lucida Handwriting", "Brush Script MT", cursive;
   position: absolute;
   margin: 0;
-  top: calc(50% - 80px);
+  top: calc(50% - 100px);
   left: 0;
   display: flex;
   justify-content: center;
@@ -39,12 +41,12 @@ export const HomeTitle = styled.h1`
 `;
 
 export const HomeSlogan = styled.p`
-  color: ${WHITE_NEUTRAL};
+  color: white;
   width: 100%;
   font-size: 30px;
   position: absolute;
   margin: 0;
-  top: calc(50% + 10px);
+  top: calc(50% - 10px);
   left: 0;
   display: flex;
   justify-content: center;

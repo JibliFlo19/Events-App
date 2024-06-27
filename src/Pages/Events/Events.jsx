@@ -69,6 +69,14 @@ const Events = () => {
     setPrice(value);
   };
 
+  const handleSearchByDate = (date) => {
+    const goodDate = date
+      .toLocaleDateString()
+      .replace(".", "/")
+      .replace(".", "/");
+    setDate(goodDate);
+  };
+
   const handleCardClick = (id) => {
     navigate("/event/${id}");
   };
@@ -120,7 +128,7 @@ const Events = () => {
           </Tab>
           <Tab eventKey="date" title="Date">
             <DivCalendar>
-              <Calendar />
+              <Calendar onChange={(date) => handleSearchByDate(date)} />
             </DivCalendar>
           </Tab>
         </Tabs>
