@@ -1,6 +1,18 @@
 import styled from "styled-components";
 
 
+
+export const PageWrapper = styled.div`
+  background-image: url("https://media.discordapp.net/attachments/1242891295110729881/1255972322083475539/WhiteClouds.png?ex=667f12e0&is=667dc160&hm=9d4370ab89988b257dcd9bccc92e2c91562a491f13cfec9083bfc481c5fbdecf&=&format=webp&quality=lossless&width=1177&height=662");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+
 export const LoginContainer = styled.div`
  
 background-color: #D0DCF4;

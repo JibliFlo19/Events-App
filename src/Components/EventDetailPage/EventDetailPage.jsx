@@ -5,6 +5,7 @@ import {
   DetailsName,
   DetailsOther,
   DivDetailsAll,
+  DetailsButton,
 } from "./EventDetailPage.style";
 import { useNavigate, useParams } from "react-router-dom";
 import useFetchEvents from "../hooks/useFetchEvents";
@@ -34,7 +35,7 @@ function EventDetailPage() {
           <DetailsOther>Description: {event?.description}</DetailsOther>
           <DetailsOther>Date: {event?.date}</DetailsOther>
           <DetailsOther>Price: {event?.price}</DetailsOther>
-          <button onClick={addToBasket}>Add to Basket</button>
+          <DetailsButton onClick={addToBasket}>Add to Favorite</DetailsButton>
         </DivDetails>
       </DivDetailsAll>
     </DivEvent>

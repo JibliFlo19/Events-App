@@ -4,45 +4,68 @@ import { SKY_BLUE, GRAY_BLUE } from "../../Constants/color";
 export const DivEvent = styled.div`
   display: flex;
   justify-content: space-between;
-  margin: 90px 25px;
-  padding: 5px 400px 0px 100px;
-  background: white;
+  margin: 50px 25px;
+  padding: 20px;
+  background: #a6b1c4;
   color: black;
   height: auto;
   gap: 16px;
   flex-wrap: wrap;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 `;
 
 export const ImgEvent = styled.img`
-  width: 300px;
-  height: 400px;
-  border-radius: 5%;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 `;
+
 export const DivDetails = styled.div`
   display: flex;
   justify-content: left;
   text-align: left;
   flex-direction: column;
-  background-color: ${SKY_BLUE};
-  border: ${GRAY_BLUE};
-  border-style: solid;
-
-  /* margin-top: 90px; */
+  background-color: #668aae;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
 `;
 
 export const DetailsName = styled.h1`
-  margin-bottom: 200px;
-  font-size: 50px;
-  margin: 0;
-  font-family: "Lucida Handwriting", "Brush Script MT", cursive;
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
 `;
 
 export const DetailsOther = styled.p`
   font-size: 20px;
-  padding: 3px;
+  padding: 10px;
+  color: white;
 `;
 
 export const DivDetailsAll = styled.div`
   display: flex;
   flex-direction: column;
+  gap: 10px;
+`;
+
+export const DetailsButton = styled.button`
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #ffaebc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #21a1f1;
+  }
 `;

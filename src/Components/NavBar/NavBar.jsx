@@ -56,6 +56,7 @@ function NavBar() {
   const handleLogout = () => {
     setUser("");
     localStorage.clear();
+    navigate("/home");
   };
   console.log(user);
   const HamburgerMenu = () => {
