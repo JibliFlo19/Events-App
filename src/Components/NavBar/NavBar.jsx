@@ -54,6 +54,7 @@ function NavBar() {
   const handleLogout = () => {
     setUser("");
     localStorage.clear();
+    navigate("/home"); 
   };
   console.log(user);
   const HamburgerMenu = () => {
@@ -75,7 +76,7 @@ function NavBar() {
         backgroundColor: scrolly === 0 ? "transparent" : "white",
       }}
     >
-      <Logo src="LogoEvents.png" />
+      <Logo src="https://media.discordapp.net/attachments/1242891295110729881/1255133009514991616/LogoEvents.png?ex=667ff9b4&is=667ea834&hm=c8d6a2159b1b3e595fefcf2e1bfe06ccb9ffa62bbe4805d37a101f8008e8ba09&=&format=webp&quality=lossless&width=625&height=625" />
       {/* <InputNavBar /> */}
       <LinkContainerDesktop>
         {routes.map((el, index) => (

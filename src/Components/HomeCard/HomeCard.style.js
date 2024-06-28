@@ -8,7 +8,7 @@ export const CardContainer = styled.div`
   width: 100%;
   height: auto;
   position: relative;
-  margin-top: 150px;
+  // margin-top: 150px;
 `;
 
 export const Card = styled.div`

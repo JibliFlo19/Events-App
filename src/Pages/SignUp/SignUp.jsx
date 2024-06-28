@@ -15,8 +15,7 @@ function SignUp() {
   
     email: '',
     phone: '',
-    firstName: '',
-    lastName: '',
+    name: '',
     password: '',
     passwordConfirmation: '',
   });
@@ -43,7 +42,7 @@ function SignUp() {
       },
     });
     setMessage('Sign Up successful');
-    setFormData({ email: '', phone: '', firstName: '', lastName: '', password: '', passwordConfirmation: '' });
+    setFormData({ email: '', phone: '', name: '',  password: '', passwordConfirmation: '' });
   };
 console.log();
   return (
@@ -78,28 +77,17 @@ console.log();
           </div>
           <div>
             <SignUpContainerLabel>
-              First name:
+              Name:
               <SignUpContainerInput
                 type="text"
-                name="firstName"
-                value={formData.firstName}
+                name="name"
+                value={formData.name}
                 onChange={handleChange}
                 required
               />
             </SignUpContainerLabel>
           </div>
-          <div>
-            <SignUpContainerLabel>
-              Last Name:
-              <SignUpContainerInput
-                type="text"
-                name="lastName"
-                value={formData.lastName}
-                onChange={handleChange}
-                required
-              />
-            </SignUpContainerLabel>
-          </div>
+          
           <div>
             <SignUpContainerLabel>
               Password:

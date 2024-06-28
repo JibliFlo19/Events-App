@@ -14,6 +14,7 @@ import {
   SocialMediaList,
   SocialMediaListItem,
   SocialMediaLink,
+  ContactContainer,
 } from "../Contacts/Contacts.style";
 
 const Contacts = () => {
@@ -52,6 +53,7 @@ const Contacts = () => {
   };
 
   return (
+    <ContactContainer>
     <ContactPage>
       <h1>Contact us</h1>
 
@@ -63,13 +65,13 @@ const Contacts = () => {
           <strong>Phone:</strong> +40 123 456 789
         </p>
         <p>
-          <strong>Address:</strong> Str. Bujorilor nr. 10, București, România
+          <strong>Address:</strong> 10 Bujorilor street, București, România
         </p>
       </ContactInfo>
 
       <ContactForm onSubmit={handleSubmit}>
         <FormLabel>
-          Nume:
+          Name:
           <FormInput
             type="text"
             name="name"
@@ -87,26 +89,26 @@ const Contacts = () => {
           />
         </FormLabel>
         <FormLabel>
-          Subiect:
+          Subject:
           <select
             name="subject"
             value={formData.subject}
             onChange={handleChange}
           >
-            <option value="Achiziție bilete">Achiziție bilete</option>
-            <option value="Probleme tehnice">Probleme tehnice</option>
-            <option value="Alte întrebări">Alte întrebări</option>
+            <option value="Achiziție bilete">Purchase tickets</option>
+            <option value="Probleme tehnice">Technical issues</option>
+            <option value="Alte întrebări">Other questions</option>
           </select>
         </FormLabel>
         <FormLabel>
-          Mesaj:
+          Message:
           <FormTextArea
             name="message"
             value={formData.message}
             onChange={handleChange}
           />
         </FormLabel>
-        <FormButton type="submit">Trimite</FormButton>
+        <FormButton type="submit">Send</FormButton>
         {message && <p>{message}</p>}
       </ContactForm>
 
@@ -156,9 +158,9 @@ const Contacts = () => {
       </SocialMedia>
 
       <WorkingHours>
-        <h2>Program de Lucru</h2>
-        <p>Luni - Vineri: 09:00 - 18:00</p>
-        <p>Sâmbătă: 10:00 - 14:00</p>
+        <h2>Work program</h2>
+        <p>Monday - Friday: 09:00 - 18:00</p>
+        <p>Saturday: 10:00 - 14:00</p>
       </WorkingHours>
 
       <PrivacyPolicy>
@@ -166,6 +168,7 @@ const Contacts = () => {
         <a href="#privacy">Read more</a>
       </PrivacyPolicy>
     </ContactPage>
+    </ContactContainer>
   );
 };
 

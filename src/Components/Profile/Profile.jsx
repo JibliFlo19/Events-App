@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
-import { Carousel } from 'react-bootstrap'; // Asum că folosești react-bootstrap pentru Carousel
-import 'boxicons'; // Asigură-te că ai instalat boxicons
+import { Carousel } from 'react-bootstrap'; 
+import 'boxicons'; 
 import { CardContainer } from '../HomeCard/HomeCard.style';
-import Events from '../../Pages/Events';
-import {
-  UserProfileContainer,
-} from '../Profile/Profile.style';
+import { UserProfileContainer,
+  UserProfileTitle,
+  UserProfileMail,
+  LoginElementsProfile,
+ } from '../Profile/Profile.style';
 
-
-export const category = [
+const category = [
   {
     title: "Party",
     img: "https://images.pexels.com/photos/167491/pexels-photo-167491.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -38,16 +38,28 @@ const Profile = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
-
+  
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const response = await fetch('http://localhost:3001/users');
+        const email = localStorage.getItem('userEmail');
+        if (!email) {
+          throw new Error('User email not found in localStorage');
+        }
+
+        const response = await fetch(`http://localhost:3001/users?email=${email}`);
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
+        
         const data = await response.json();
-        setUser(data[0]);  // Presupunem că utilizatorul este primul din lista
+        const loggedInUser = data.find(user => user.email === email);
+        
+        if (!loggedInUser) {
+          throw new Error('User not found');
+        }
+        
+        setUser(loggedInUser);
         setLoading(false);
       } catch (error) {
         setError(error);
@@ -56,14 +68,55 @@ const Profile = () => {
     };
 
     fetchUser();
-    const count = JSON.parse(localStorage.getItem('basketCount')) || 0;
-    setBasketCount(count);
+  }, []);
+
+  useEffect(() => {
+    const handleStorageChange = () => {
+      const email = localStorage.getItem('userEmail');
+      if (email) {
+        setLoading(true);
+        fetch(`http://localhost:3001/users?email=${email}`)
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
+            return response.json();
+          })
+          .then(data => {
+            const loggedInUser = data.find(user => user.email === email);
+            if (!loggedInUser) {
+              throw new Error('User not found');
+            }
+            setUser(loggedInUser);
+            setLoading(false);
+          })
+          .catch(error => {
+            setError(error);
+            setLoading(false);
+          });
+      }
+    };
+
+    window.addEventListener('storage', handleStorageChange);
+
+    return () => {
+      window.removeEventListener('storage', handleStorageChange);
+    };
   }, []);
 
   useEffect(() => {
     const count = JSON.parse(localStorage.getItem('basketCount')) || 0;
     setBasketCount(count);
   }, []);
+
+  // const handleLogout = () => {
+  //   setUser(null);
+  //   setBasketCount(0);
+  //   localStorage.removeItem('userEmail');
+  //   localStorage.removeItem('basketCount');
+  //   navigate('/home');
+  //   // window.location.reload(); // This might not be necessary
+  // };
 
   if (loading) {
     return <div>Loading...</div>;
@@ -79,12 +132,14 @@ const Profile = () => {
 
   return (
     <div>
-      <h1>Salut, {user.name}!</h1>
-      <p>Email: {user.email}</p>
+      <LoginElementsProfile>
+      <UserProfileTitle>Salut, {user.name}!</UserProfileTitle>
+      <UserProfileMail>Email: {user.email}</UserProfileMail>
       <UserProfileContainer>
-        <box-icon name='cart-add'></box-icon>
+        <box-icon name='heart' type='solid' color='#ff0000'></box-icon>
         <span>{basketCount}</span>
       </UserProfileContainer>
+      </LoginElementsProfile>
       <CardContainer>
         <Carousel>
           {category.map((cat) => (
@@ -96,12 +151,13 @@ const Profile = () => {
               <img className="d-block w-100" src={cat.img} alt={cat.title} />
               <Carousel.Caption>
                 <h3>{cat.title}</h3>
-                <p>Vezi bilete la {cat.title} in orasul tau.</p>
+                <p>Vezi bilete la {cat.title} în orașul tău.</p>
               </Carousel.Caption>
             </Carousel.Item>
           ))}
         </Carousel>
       </CardContainer>
+      {/* <button onClick={handleLogout}>Logout</button> */}
     </div>
   );
 };

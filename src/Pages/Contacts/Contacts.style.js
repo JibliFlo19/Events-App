@@ -1,5 +1,16 @@
 import styled from "styled-components";
 
+
+export const ContactContainer = styled.div`
+  background-image: url("https://media.discordapp.net/attachments/1242891295110729881/1255972322083475539/WhiteClouds.png?ex=667f12e0&is=667dc160&hm=9d4370ab89988b257dcd9bccc92e2c91562a491f13cfec9083bfc481c5fbdecf&=&format=webp&quality=lossless&width=1177&height=662");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 export const ContactPage = styled.div`
   padding: 20px;
   display: flex;
@@ -12,7 +23,7 @@ export const ContactPage = styled.div`
   border-radius: 10px;
   margin-top: 80px;
   margin-bottom: 80px;
-  background-color: #d0dcf4;
+  background-color: #CECAD4;
   box-shadow: 0 4px 8px rgba;
 `;
 export const ContactInfo = styled.div`
