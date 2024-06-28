@@ -1,12 +1,7 @@
 import { Link } from "react-router-dom";
 
 import styled from "styled-components";
-import {
-  GREEN_DARK,
-  WHITE_NEUTRAL,
-  BEIGE,
-  SKY_BLUE,
-} from "../../Constants/color";
+import { WHITE_NEUTRAL, SKY_BLUE, GRAY_BLUE } from "../../Constants/color";
 
 export const Card = styled(Link)`
   background: ${SKY_BLUE};
@@ -19,6 +14,10 @@ export const Card = styled(Link)`
   flex-direction: column;
   max-height: 600px;
   border-radius: 10px 10px 0 0;
+
+  &:hover {
+    background-color: ${GRAY_BLUE};
+  }
 `;
 
 export const CardImgContainer = styled.div`

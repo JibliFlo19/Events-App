@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { GRAY, WHITE_NEUTRAL } from "../../Constants/color";
 
 export const HomeWrapper = styled.div`
   width: 100%;
@@ -26,7 +25,6 @@ export const HomeImgBackground = styled.img`
 `;
 
 export const HomeTitle = styled.h1`
-  /* color: ${GRAY}; */
   color: white;
   width: 100%;
   font-size: 90px;
@@ -38,6 +36,14 @@ export const HomeTitle = styled.h1`
   display: flex;
   justify-content: center;
   box-shadow: 10px;
+
+  @media screen and (max-width: 820px) {
+    font-size: 70px;
+  }
+
+  @media screen and (max-width: 620px) {
+    font-size: 50px;
+  }
 `;
 
 export const HomeSlogan = styled.p`
@@ -51,4 +57,14 @@ export const HomeSlogan = styled.p`
   display: flex;
   justify-content: center;
   box-shadow: 10px;
+
+  @media screen and (max-width: 820px) {
+    top: calc(50% - 30px);
+    font-size: 30px;
+  }
+
+  @media screen and (max-width: 620px) {
+    top: calc(50% - 50px);
+    font-size: 20px;
+  }
 `;

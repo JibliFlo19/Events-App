@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
+  // ContactWrapper,
   ContactPage,
   ContactInfo,
   AditionalInfo,
@@ -52,6 +53,7 @@ const Contacts = () => {
   };
 
   return (
+    // <ContactWrapper>
     <ContactPage>
       <h1>Contact us</h1>
 
@@ -166,6 +168,7 @@ const Contacts = () => {
         <a href="#privacy">Read more</a>
       </PrivacyPolicy>
     </ContactPage>
+    // </ContactWrapper>
   );
 };
 

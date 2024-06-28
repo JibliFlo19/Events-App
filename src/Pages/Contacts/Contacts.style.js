@@ -1,8 +1,27 @@
 import styled from "styled-components";
 
+// export const ContactWrapper = styled.div`
+//   background-image: url("/CloudsBackground.png");
+//   width: 100%;
+//   height: 100vh;
+//   background-color: white;
+//   background-position-y: 0;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// `;
+
+// export const ContactImgBackground = styled.img`
+//   width: 100%;
+//   padding: 20px 0px;
+//   height: auto;
+//   min-height: 800px;
+//   position: relative;
+// `;
+
 export const ContactPage = styled.div`
   padding: 20px;
   display: flex;
+  /* background-image: url("/CloudsBackground.png"); */
   justify-content: center;
   flex-direction: column;
   max-width: 800px;

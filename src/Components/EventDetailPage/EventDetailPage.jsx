@@ -1,12 +1,10 @@
-import React from "react";
-
 import {
   DivEvent,
   ImgEvent,
   DivDetails,
   DetailsName,
   DetailsOther,
-  DivDetailsAll
+  DivDetailsAll,
 } from "./EventDetailPage.style";
 import { useNavigate, useParams } from "react-router-dom";
 import useFetchEvents from "../hooks/useFetchEvents";
@@ -16,14 +14,14 @@ function EventDetailPage() {
   const { events: event } = useFetchEvents("/" + id);
   console.log(event);
   const navigate = useNavigate();
- 
+
   const addToBasket = () => {
-    let count = JSON.parse(localStorage.getItem('basketCount')) || 0;
+    let count = JSON.parse(localStorage.getItem("basketCount")) || 0;
     count += 1;
-    localStorage.setItem('basketCount', JSON.stringify(count));
-    navigate('/profile');
+    localStorage.setItem("basketCount", JSON.stringify(count));
+    navigate("/profile");
   };
-  
+
   return (
     <DivEvent>
       <ImgEvent src={event?.img} alt="" />

@@ -6,6 +6,7 @@ import {
   NavBarContainer,
   ButtonDropdown,
   LinkContainerDesktop,
+  OtherNavLinks,
 } from "./NavBar.style";
 import { List, X } from "react-bootstrap-icons";
 import { useNavigate } from "react-router-dom";
@@ -20,12 +21,13 @@ export const routes = [
 ];
 
 function NavBar() {
+  const [user, setUser] = useState();
   const size = useWindowSize();
   const [showHamburger, setShowHamburger] = useState(false);
   const [displayDropdown, setDisplayDropdown] = useState(false);
   const navigate = useNavigate();
   const [scrolly, setScrolly] = useState(window.scrollY);
-  const [user, setUser] = useState();
+
   const x = localStorage.getItem("id");
 
   const handleDisplayDropdown = () => {
@@ -75,7 +77,7 @@ function NavBar() {
         backgroundColor: scrolly === 0 ? "transparent" : "white",
       }}
     >
-      <Logo src="LogoEvents.png" />
+      <Logo src="/LogoEvents.png" />
       {/* <InputNavBar /> */}
       <LinkContainerDesktop>
         {routes.map((el, index) => (
@@ -89,11 +91,15 @@ function NavBar() {
 
         {user ? (
           <>
-            <a onClick={() => navigate(`/profile`)}>Profile</a>{" "}
-            <a onClick={handleLogout}>Logout</a>
+            <OtherNavLinks onClick={() => navigate(`/profile`)}>
+              Profile
+            </OtherNavLinks>{" "}
+            <OtherNavLinks onClick={handleLogout}>Logout</OtherNavLinks>
           </>
         ) : (
-          <a onClick={() => navigate(`/login`)}>Login</a>
+          <OtherNavLinks onClick={() => navigate(`/login`)}>
+            Login
+          </OtherNavLinks>
         )}
       </LinkContainerDesktop>
       {showHamburger && <HamburgerMenu />}

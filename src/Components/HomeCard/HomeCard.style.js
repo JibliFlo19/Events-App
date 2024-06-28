@@ -30,4 +30,14 @@ export const CardTitle = styled.h1`
 export const CardImg = styled.img`
   width: 700px;
   height: 500px;
+
+  @media screen and (max-width: 820px) {
+    width: 600px;
+    height: 400px;
+  }
+
+  @media screen and (max-width: 620px) {
+    width: 400px;
+    height: 300px;
+  }
 `;

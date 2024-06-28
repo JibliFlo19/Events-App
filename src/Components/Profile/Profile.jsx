@@ -1,13 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Carousel } from 'react-bootstrap'; // Asum că folosești react-bootstrap pentru Carousel
-import 'boxicons'; // Asigură-te că ai instalat boxicons
-import { CardContainer } from '../HomeCard/HomeCard.style';
-import Events from '../../Pages/Events';
-import {
-  UserProfileContainer,
-} from '../Profile/Profile.style';
-
+import { Carousel } from "react-bootstrap"; // Asum că folosești react-bootstrap pentru Carousel
+import "boxicons"; // Asigură-te că ai instalat boxicons
+import { CardContainer, CardImg } from "../HomeCard/HomeCard.style";
+import Events from "../../Pages/Events";
+import { UserProfileContainer } from "../Profile/Profile.style";
 
 export const category = [
   {
@@ -42,12 +39,12 @@ const Profile = () => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const response = await fetch('http://localhost:3001/users');
+        const response = await fetch("http://localhost:3001/users");
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          throw new Error("Network response was not ok");
         }
         const data = await response.json();
-        setUser(data[0]);  // Presupunem că utilizatorul este primul din lista
+        setUser(data[0]); // Presupunem că utilizatorul este primul din lista
         setLoading(false);
       } catch (error) {
         setError(error);
@@ -56,12 +53,12 @@ const Profile = () => {
     };
 
     fetchUser();
-    const count = JSON.parse(localStorage.getItem('basketCount')) || 0;
+    const count = JSON.parse(localStorage.getItem("basketCount")) || 0;
     setBasketCount(count);
   }, []);
 
   useEffect(() => {
-    const count = JSON.parse(localStorage.getItem('basketCount')) || 0;
+    const count = JSON.parse(localStorage.getItem("basketCount")) || 0;
     setBasketCount(count);
   }, []);
 
@@ -79,10 +76,12 @@ const Profile = () => {
 
   return (
     <div>
-      <h1>Salut, {user.name}!</h1>
+      <h1>
+        Salut, {user.firstName} {user.lastName}!
+      </h1>
       <p>Email: {user.email}</p>
       <UserProfileContainer>
-        <box-icon name='cart-add'></box-icon>
+        <box-icon name="cart-add"></box-icon>
         <span>{basketCount}</span>
       </UserProfileContainer>
       <CardContainer>
@@ -91,9 +90,9 @@ const Profile = () => {
             <Carousel.Item
               key={cat.title}
               style={{ cursor: "pointer" }}
-              onClick={() => navigate('/events')}
+              onClick={() => navigate("/events")}
             >
-              <img className="d-block w-100" src={cat.img} alt={cat.title} />
+              <CardImg src={cat.img}></CardImg>
               <Carousel.Caption>
                 <h3>{cat.title}</h3>
                 <p>Vezi bilete la {cat.title} in orasul tau.</p>

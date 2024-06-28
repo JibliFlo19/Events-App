@@ -1,27 +1,25 @@
-import React, { useState } from 'react';
+import { useState } from "react";
 import {
-    App,
-    SignUpContainerTitle,
-    SignUpContainer,
-    SignUpnContainerForm,
-    SignUpContainerLabel,
-    SignUpContainerInput,
-    SignUpContainerButton,
-
+  App,
+  SignUpContainerTitle,
+  SignUpContainer,
+  SignUpnContainerForm,
+  SignUpContainerLabel,
+  SignUpContainerInput,
+  SignUpContainerButton,
 } from "../SignUp/SignUp.style";
 
 function SignUp() {
   const [formData, setFormData] = useState({
-  
-    email: '',
-    phone: '',
-    firstName: '',
-    lastName: '',
-    password: '',
-    passwordConfirmation: '',
+    email: "",
+    phone: "",
+    firstName: "",
+    lastName: "",
+    password: "",
+    passwordConfirmation: "",
   });
 
-  const [message, setMessage] = useState('');
+  const [message, setMessage] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -42,16 +40,22 @@ function SignUp() {
         "Content-Type": "application/json",
       },
     });
-    setMessage('Sign Up successful');
-    setFormData({ email: '', phone: '', firstName: '', lastName: '', password: '', passwordConfirmation: '' });
+    setMessage("Sign Up successful");
+    setFormData({
+      email: "",
+      phone: "",
+      firstName: "",
+      lastName: "",
+      password: "",
+      passwordConfirmation: "",
+    });
   };
-console.log();
+  console.log();
   return (
     <App>
       <SignUpContainer>
         <SignUpContainerTitle>Registration</SignUpContainerTitle>
         <SignUpnContainerForm onSubmit={handleSubmit}>
-          
           <div>
             <SignUpContainerLabel>
               Email:

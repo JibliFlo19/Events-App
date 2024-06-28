@@ -19,6 +19,7 @@ export const NavBarContainer = styled.div`
   z-index: 999;
   width: 100%;
   font-weight: bold;
+  justify-content: right;
 `;
 
 //  &:hover {
@@ -55,8 +56,8 @@ export const LinkNavStyle = styled(Link)`
 
 export const LinkNavDropdownStyle = styled(Link)`
   text-decoration: none;
-  justify-content: center;
-  text-align: center;
+  margin-left: auto;
+
   color: ${GRAY};
   padding: 0px 5px;
   border-radius: 4px;
@@ -74,22 +75,18 @@ export const DropdownContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
-  width: 200px;
   height: 60px;
   position: absolute;
   top: 60px;
-  left: 50px;
-
   display: block;
-  background-color: ${WHITE_NEUTRAL};
+  text-align: right;
 `;
 
 export const LinkContainer = styled.div`
   display: flex;
   flex-direction: column;
+  margin-left: auto;
   justify-content: space-between;
-  color: ${WHITE_NEUTRAL};
   color: black;
   width: 100%;
   height: 60px;
@@ -112,14 +109,25 @@ export const LinkContainerDesktop = styled.div`
 export const ButtonDropdown = styled.button`
   width: 40px;
   height: 40px;
-  color: ${WHITE_NEUTRAL};
+  margin-left: auto;
+
   display: none;
   background: none;
-  padding: 0;
-  margin: 0;
   border: none;
+  color: ${GRAY};
 
   @media screen and (max-width: 820px) {
     display: block;
+  }
+`;
+
+export const OtherNavLinks = styled.a`
+  color: ${GRAY};
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: ${WHITE_GRAY};
   }
 `;
