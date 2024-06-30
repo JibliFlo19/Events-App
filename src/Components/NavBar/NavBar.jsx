@@ -35,7 +35,7 @@ function NavBar() {
   };
 
   useEffect(() => {
-    window.onscroll = (e) => {
+    window.onscroll = () => {
       setScrolly(window.scrollY);
     };
     setUser(x);
@@ -78,7 +78,7 @@ function NavBar() {
         backgroundColor: scrolly === 0 ? "transparent" : "white",
       }}
     >
-      <Logo src="/LogoEvents.png" />
+      <Logo src="/Logo.png" />
       {/* <InputNavBar /> */}
       <LinkContainerDesktop>
         {routes.map((el, index) => (

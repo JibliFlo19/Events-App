@@ -6,26 +6,27 @@ export const ContactContainer = styled.div`
   background-position: center;
   min-height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  padding-top: 150px;
+  padding-bottom: 70px;
 `;
 
-export const ContactPage = styled.div`
-  padding: 20px;
-  display: flex;
-  /* background-image: url("/CloudsBackground.png"); */
-  justify-content: center;
-  flex-direction: column;
-  max-width: 800px;
-  width: 100%;
-  margin: auto;
-  border: 1px solid black;
-  border-radius: 10px;
-  margin-top: 80px;
-  margin-bottom: 80px;
-  background-color: #cecad4;
-  box-shadow: 0 4px 8px rgba;
-`;
+// export const ContactPage = styled.div`
+//   padding: 20px;
+//   display: flex;
+//   /* background-image: url("/CloudsBackground.png"); */
+//   justify-content: center;
+//   flex-direction: column;
+//   max-width: 800px;
+//   width: 100%;
+//   margin: auto;
+//   border: 1px solid black;
+//   border-radius: 10px;
+//   margin-top: 80px;
+//   margin-bottom: 80px;
+//   background-color: #cecad4;
+//   box-shadow: 0 4px 8px rgba;
+// `;
 export const ContactInfo = styled.div`
   margin-bottom: 20px;
   display: flex;
@@ -38,6 +39,12 @@ export const AditionalInfo = styled.div`
   margin-bottom: 20px;
 `;
 
+export const AditionalInfoLink = styled.a`
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+`;
+
 export const SocialMedia = styled.div`
   margin-bottom: 20px;
 `;
@@ -48,6 +55,12 @@ export const WorkingHours = styled.div`
 
 export const PrivacyPolicy = styled.div`
   margin-bottom: 20px;
+`;
+
+export const PrivacyPolicyLink = styled.a`
+  color: black;
+  cursor: pointer;
+  font-style: italic;
 `;
 
 export const ContactForm = styled.form`
@@ -109,4 +122,10 @@ export const SocialMediaLink = styled.a`
   &:hover {
     text-decoration: underline;
   }
+`;
+
+export const CardContact1 = styled.div``;
+
+export const CardContact2 = styled.div`
+  margin-top: 0px;
 `;

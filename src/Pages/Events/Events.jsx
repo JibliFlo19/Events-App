@@ -7,7 +7,7 @@ import {
 } from "./Events.style";
 import { useNavigate } from "react-router-dom";
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import EventsWrapper from "./EventsWrapper";
 import Tab from "react-bootstrap/Tab";
@@ -29,6 +29,7 @@ const Events = () => {
   useEffect(() => {
     if (!eventsFetch) return;
 
+    window.scrollTo(0, 0);
     setEvents(eventsFetch);
   }, [eventsFetch]);
 
@@ -78,12 +79,12 @@ const Events = () => {
   };
 
   const handleCardClick = (id) => {
-    navigate("/event/${id}");
+    navigate(`/event/${id}`);
   };
   return (
     <>
       <DivFiltrare>
-        <TextFiltrare>Search an event by:</TextFiltrare>
+        <TextFiltrare id="TextFiltrare">Search an event by:</TextFiltrare>
 
         <Tabs
           defaultActiveKey="profile"

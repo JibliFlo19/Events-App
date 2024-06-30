@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Carousel } from "react-bootstrap"; // Asum că folosești react-bootstrap pentru Carousel
-import "boxicons"; // Asigură-te că ai instalat boxicons
+import { Carousel } from "react-bootstrap";
+import "boxicons";
 import { CardContainer, CardImg } from "../HomeCard/HomeCard.style";
-import Events from "../../Pages/Events";
+
 import {
   UserProfileContainer,
   UserProfileTitle,

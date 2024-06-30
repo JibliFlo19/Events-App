@@ -6,6 +6,7 @@ import {
   DetailsOther,
   DivDetailsAll,
   DetailsButton,
+  ImgDiv,
 } from "./EventDetailPage.style";
 import { useNavigate, useParams } from "react-router-dom";
 import useFetchEvents from "../hooks/useFetchEvents";
@@ -25,7 +26,9 @@ function EventDetailPage() {
 
   return (
     <DivEvent>
-      <ImgEvent src={event?.img} alt="" />
+      <ImgDiv>
+        <ImgEvent src={event?.img} alt="" />
+      </ImgDiv>
       <DivDetailsAll>
         <DetailsName>{event?.name}</DetailsName>
         <DivDetails>

@@ -12,10 +12,6 @@ import {
 } from "../../Components/HomeCard/HomeCard.style";
 import { Carousel } from "react-bootstrap";
 import TransitionPage from "../../Components/TransitionPage/TransitionPage";
-import { TransitionDiv } from "../../Components/TransitionPage/TransitionPage.style";
-// import ExampleCarouselImage from "components/ExampleCarouselImage";
-import Login from "../Login/Login";
-import SignUp from "../SignUp/SignUp";
 
 export const category = [
   {
@@ -47,7 +43,7 @@ function Home() {
       <HomeWrapper>
         <HomeContainer>
           <HomeTitle>Events Fusion</HomeTitle>
-          <HomeSlogan>There's no place like out of home</HomeSlogan>
+          <HomeSlogan>There is no place like out of home</HomeSlogan>
         </HomeContainer>
       </HomeWrapper>
 

@@ -1,12 +1,14 @@
 import { useState } from "react";
 import {
   // ContactWrapper,
-  ContactPage,
+
   ContactInfo,
   AditionalInfo,
+  AditionalInfoLink,
   SocialMedia,
   WorkingHours,
   PrivacyPolicy,
+  PrivacyPolicyLink,
   ContactForm,
   FormLabel,
   FormInput,
@@ -16,7 +18,10 @@ import {
   SocialMediaListItem,
   SocialMediaLink,
   ContactContainer,
+  CardContact1,
+  CardContact2,
 } from "../Contacts/Contacts.style";
+import "boxicons";
 
 const Contacts = () => {
   const [formData, setFormData] = useState({
@@ -55,7 +60,7 @@ const Contacts = () => {
 
   return (
     <ContactContainer>
-      <ContactPage>
+      <CardContact1>
         <h1>Contact us</h1>
 
         <ContactInfo>
@@ -112,15 +117,17 @@ const Contacts = () => {
           <FormButton type="submit">Send</FormButton>
           {message && <p>{message}</p>}
         </ContactForm>
+      </CardContact1>
 
+      <CardContact2>
         <AditionalInfo>
           <h2>Suport</h2>
           <ul>
             <li>
-              <a href="#faq">FAQ</a>
+              <AditionalInfoLink>FAQ</AditionalInfoLink>
             </li>
             <li>
-              <a href="#support">Technical Asistence</a>
+              <AditionalInfoLink>Technical Asistence</AditionalInfoLink>
             </li>
           </ul>
         </AditionalInfo>
@@ -134,7 +141,7 @@ const Contacts = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Facebook
+                <box-icon type="logo" name="facebook"></box-icon>
               </SocialMediaLink>
             </SocialMediaListItem>
             <SocialMediaListItem>
@@ -143,7 +150,7 @@ const Contacts = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Twitter
+                <box-icon name="twitter" type="logo"></box-icon>
               </SocialMediaLink>
             </SocialMediaListItem>
             <SocialMediaListItem>
@@ -152,7 +159,7 @@ const Contacts = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Instagram
+                <box-icon name="instagram-alt" type="logo"></box-icon>
               </SocialMediaLink>
             </SocialMediaListItem>
           </SocialMediaList>
@@ -166,9 +173,9 @@ const Contacts = () => {
 
         <PrivacyPolicy>
           <h2>Privacy Policy</h2>
-          <a href="#privacy">Read more</a>
+          <PrivacyPolicyLink>Read more</PrivacyPolicyLink>
         </PrivacyPolicy>
-      </ContactPage>
+      </CardContact2>
     </ContactContainer>
   );
 };
